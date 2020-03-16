@@ -1,5 +1,6 @@
 # BeaverCrypt
 AES-256 bit encryption service built in python
+----------------------------------------------
 HOW TO USE IN LINUX:
 ---------------------
 1. Use the directory you want to copy this program in
