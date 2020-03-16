@@ -1,3 +1,7 @@
+#BEAVERCRYPT
+#MADE BY: ORANGEMAN9590 at GITHUB
+#15, FEBRUARY, 2020
+
 from Crypto import Random
 from Crypto.Cipher import AES
 import os
@@ -64,7 +68,7 @@ class Encryptor:
 
 key = b'[EX\xc8\xd5\xbfI{\xa2$\x05(\xd5\x18\xbf\xc0\x85)\x10nc\x94\x02)j\xdf\xcb\xc4\x94\x9d(\x9e'
 enc = Encryptor(key)
-clear = lambda: os.system('cls')
+clear = lambda: os.system('clear')
 
 if os.path.isfile('data.txt.enc'):
     while True:
@@ -80,7 +84,7 @@ if os.path.isfile('data.txt.enc'):
             print("|                   WELCOME                       |")
             print("|                     TO                          |")
             print("|                 BEAVERCRYPT                     |")
-            print("|                                                 |")
+            print("|              BY: ORANGEMAN9590                  |")
             print(" _________________________________________________")
             break
 
@@ -117,7 +121,7 @@ else:
     print("|                   WELCOME                       |")
     print("|                     TO                          |")
     print("|                 BEAVERCRYPT                     |")
-    print("|                                                 |")
+    print("|              BY: ORANGEMAN9590                  |")
     print(" _________________________________________________")
     f = open("data.txt", "w+")
     f.write(password)
