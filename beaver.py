@@ -88,9 +88,8 @@ if os.path.isfile('data.txt.enc'):
             break
 
     while True:
-        clear()
         choice = int(input(
-            "1. Press '1' to encrypt file.\n2. Press '2' to decrypt file.\n3. Press '3' to Encrypt all files in the directory.(REMOVES EVERYTHING)\n4. Press '4' to exit.\n"))
+            "Press '1' to encrypt file.\nPress '2' to decrypt file.\nPress '3' to Encrypt all files in the directory.(REMOVES EVERYTHING)\nPress '4' to exit.\n"))
         clear()
         if choice == 1:
             enc.encrypt_file(str(input("Enter name of file to encrypt: ")))
