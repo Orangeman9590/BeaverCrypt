@@ -78,7 +78,8 @@ if os.path.isfile('data.txt.enc'):
         with open("data.txt", "r") as f:
             p = f.readlines()
         if p[0] == password:
-            enc.encrypt_file("data.txt")               
+            enc.encrypt_file("data.txt")   
+            os.system('clear')
             print(" ___                        ___               _   ")
             print("| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ")
             print("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|")
@@ -125,5 +126,7 @@ else:
     f.write(password)
     f.close()
     enc.encrypt_file("data.txt")
-    print("Please restart the program to complete the setup")
-    time.sleep(15)
+    print("Restarting Program...")
+    time.sleep(2)
+    os.system('clear')
+    os.system('python3 beaver.py')
