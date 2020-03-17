@@ -9,7 +9,8 @@ import os.path
 from os import listdir
 from os.path import isfile, join
 import time
-
+import termcolor
+from termcolor import colored
 
 class Encryptor:
     def __init__(self, key):
@@ -80,12 +81,12 @@ if os.path.isfile('data.txt.enc'):
         if p[0] == password:
             enc.encrypt_file("data.txt")   
             os.system('clear')
-            print(" ___                        ___               _   ")
-            print("| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ")
-            print("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|")
-            print("|___/\___\__,_|\_/\___|_|  \___|_|  \_, | .__/\__|")
-            print("                                    |__/|_|       ")
-            print("           DEVELOPED BY: Orangeman9590         ")
+            print(colored(' ___                        ___               _   ', 'red'))
+            print(colored('| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ', 'red'))
+            print(colored("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|", 'red'))
+            print(colored('|___/\___\__,_|\_/\___|_|  \___|_|  \_, | .__/\__|', 'red'))
+            print(colored('                                    |__/|_|       ', 'red'))
+            print(colored('           DEVELOPED BY: Orangeman9590         ', 'magenta')
             break
 
     while True:
@@ -109,12 +110,12 @@ if os.path.isfile('data.txt.enc'):
 else:
     while True:
         clear()
-        print(" ___                        ___               _   ")
-        print("| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ")
-        print("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|")
-        print("|___/\___\__,_|\_/\___|_|  \___|_|  \_, | .__/\__|")
-        print("                                    |__/|_|       ")
-        print("           DEVELOPED BY: Orangeman9590         ")
+        print(colored(' ___                        ___               _   ', 'red'))
+        print(colored('| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ', 'red'))
+        print(colored("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|", 'red'))
+        print(colored('|___/\___\__,_|\_/\___|_|  \___|_|  \_, | .__/\__|', 'red'))
+        print(colored('                                    |__/|_|       ', 'red'))
+        print(colored('           DEVELOPED BY: Orangeman9590         ', 'magenta')
         print("-----------------------------------------------------")
         password = str(input("Enter a password that will be used for decryption: "))
         repassword = str(input("Confirm password: "))
