@@ -78,13 +78,7 @@ if os.path.isfile('data.txt.enc'):
         with open("data.txt", "r") as f:
             p = f.readlines()
         if p[0] == password:
-            enc.encrypt_file("data.txt")
-            print("                  .-"""-.__   ")
-            print("                 /      ' o'\")
-            print("              ,-;  '.  :   _c")
-            print("              :_."\._ ) ::-"")
-            print('''                   ""m "m  ''')
-            print("")
+            enc.encrypt_file("data.txt")               
             print(" ___                        ___               _   ")
             print("| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ")
             print("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|")
@@ -115,12 +109,6 @@ if os.path.isfile('data.txt.enc'):
 else:
     while True:
         clear()
-        print("                  .-"""-.__   ")
-        print("                 /      ' o'\")
-        print("              ,-;  '.  :   _c")
-        print("              :_."\._ ) ::-"")
-        print('''                   ""m "m  ''')
-        print("")
         print(" ___                        ___               _   ")
         print("| _ ) ___ __ ___ _____ _ _ / __|_ _ _  _ _ __| |_ ")
         print("| _ \/ -_) _` \ V / -_) '_| (__| '_| || | '_ \  _|")
